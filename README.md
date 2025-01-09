@@ -3,3 +3,11 @@
 <div>Im not good with readmes. It's just a forum, but there's no upvote system. Everything is based on time.</div>
 <div>I might add a few additions, like text indetations, letting users see thier posts all at once, a forgot </div>
 <div>password feature, etc. But for now, this is what</div>
+<br>
+<div class="sneak">I am currently looking for an internship and would be intrested in hearing an oppurtuinities given, please contact me if you'd like to work with me</div>
+
+<style>
+  .sneak{
+    color:red;
+  }
+</style>
