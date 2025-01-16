@@ -2,18 +2,23 @@
 
 <div>clocker is a standard formun based on entirely on recency, hence its name.</div>
 <br>
-![Alt text](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
+
+![image](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
 <br>
 <div>Posts have a nested display of replies, and responses come in reactively</div>
 <br>
+
 ![image](https://github.com/user-attachments/assets/50506542-a7a6-4d76-b9a8-d56a29152d64)
+
 <br>
 <div> to create an acount go to the login screen. This can be done sevearl ways since attempting to add to the site will result in being redirected to it, but the simplest way is to click the login button above</div>
 <br>
+
 ![image](https://github.com/user-attachments/assets/21c934e9-69bb-4c44-b1ac-a906943f70ee)
 <br>
 <div>Then go to register</div>
 <br>
+
 ![image](https://github.com/user-attachments/assets/43aaaad0-4b1a-4a6f-a76a-d5f1a5ba97ca)
 <div>Then type in good credentials. Once you click register you will be redirected to whatever route you were previously in, but now you will be logged in with you user</div>
 <br>
