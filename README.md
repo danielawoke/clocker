@@ -1,5 +1,11 @@
 <h1>Welcome to Clocker!</h1>
 
+<div>clocker is a standard formun based on entirely on recency, hence its name.</div>
+
+![image](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
+
+
+
 <div>Im not good with readmes. It's just a forum, but there's no upvote system. Everything is based on time.</div>
 <br>
 <div>Caution: the DB server is fairly slow, it may take 1-2 minutes for posts to load in on the home page</div>
