@@ -2,7 +2,9 @@
 
 <div>clocker is a standard formun based on entirely on recency, hence its name.</div>
 <br>
-![image](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
+<div>
+  ![image](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
+</div>
 <br>
 <div>Posts have a nested display of replies, and responses come in reactively</div>
 <br>
