@@ -1,5 +1,8 @@
 <h1>Welcome to Clocker!</h1>
 
+<h2>Preview</h2>
+
+
 <div>clocker is a standard formun based on entirely on recency, hence its name.</div>
 <br>
 
@@ -11,6 +14,9 @@
 ![image](https://github.com/user-attachments/assets/50506542-a7a6-4d76-b9a8-d56a29152d64)
 
 <br>
+
+<h2>Account Creation</h2>
+
 <div> to create an acount go to the login screen. This can be done sevearl ways since attempting to add to the site will result in being redirected to it, but the simplest way is to click the login button above</div>
 <br>
 
@@ -25,6 +31,9 @@
 <div>If you'd like to sign out of your account you can hover/click the profile icon and click signout.</div>
 
 ![image](https://github.com/user-attachments/assets/0f95c599-c37b-43cc-92c9-ac045833e25a)
+
+
+<h2>Updates</h2>
 
 <div>Caution: the DB server is fairly slow, it may take 1-2 minutes for posts to load in on the home page</div>
 <br>
