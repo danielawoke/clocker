@@ -99,10 +99,12 @@ async function insertReply(reply,author){
 }
 
 async function postReply(){
+    document.getElementById("btn").style.backgroundColor = "black"
     let reply = document.getElementById("replyText").value
     let strs = route.path.split('/');
     let author = await hashToUser(strs[3])
     await insertReply(reply,author)
+    document.getElementById("btn").style.backgroundColor = "rgb(0, 136, 255)"
 }
 
 
@@ -167,7 +169,7 @@ async function rep(){
             <div class="textBox">
               <textarea id="replyText" ></textarea>
               <div class="buttonPos">
-                <button @click="postReply()" >sumbit</button>
+                <button id="btn" @click="postReply()" >sumbit</button>
               </div>
             </div>
           </div>

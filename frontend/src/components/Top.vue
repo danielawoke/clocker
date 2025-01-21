@@ -286,6 +286,34 @@ function signOut(){
     .profileBlock{
         right:20px;
     }
+    @keyframes signInHover{
+        from{
+            
+            border-radius: 25px;
+            position:absolute;
+            color:rgba(255, 255, 255, 0.358);
+            top: 5px;
+            padding-left:15px;
+            padding-right:15px;
+            right:10px;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(0, 80, 13);
+            font-weight: bold;
+        }
+        to{
+
+            border-radius: 25px;
+            position:absolute;
+            color:rgb(255, 255, 255);
+            top: 5px;
+            padding-left:15px;
+            padding-right:15px;
+            right:10px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
+    }
     
 }
 
@@ -299,6 +327,36 @@ function signOut(){
     }
     .profileBlock{
         right:150px;
+    }
+    @keyframes signInHover{
+        from{
+            
+            border-radius: 25px;
+            position:absolute;
+            color:rgba(255, 255, 255, 0.358);
+            top: 5px;
+            padding-left:15px;
+            padding-right:15px;
+            right:150px;
+            margin-right: 10px;            
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(0, 80, 13);
+            font-weight: bold;
+        }
+        to{
+
+            border-radius: 25px;
+            position:absolute;
+            color:rgb(255, 255, 255);
+            top: 5px;
+            padding-left:15px;
+            padding-right:15px;
+            right:150px;
+            margin-right: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            font-weight: bold;
+        }
     }
     
 }

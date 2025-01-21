@@ -59,20 +59,20 @@ async function loadMostRecent(){
 
 
 
-let reps = ref(props.level<4?true:false);
+let reps = ref(false);
 
-async function showReps(obj){    
-    loadMore();
+async function showReps(obj){  
     reps.value = !reps.value;
-    if(reps.value){
-        document.getElementById(props.hash).innerText = "+++HIDE REPLIES+++"
-    }else{
+    if(document.getElementById(props.hash).innerText == "+++HIDE REPLIES+++"){
         document.getElementById(props.hash).innerText =  "+++SHOW REPLIES+++"
-    }
+    }else{
+        document.getElementById(props.hash).innerText = "+++LOADING...+++"
+        await loadMore();
+        document.getElementById(props.hash).innerText = "+++HIDE REPLIES+++"
+    } 
 }
 
 async function check(hash){
-    console.log(hash)
     let str = "hashToUser~.&~"+hash
     const response =  await fetch(backendAPI, {
             method: "POST",
@@ -124,12 +124,16 @@ async function insertReply(reply,author){
             method: "POST",
             body: str
     });
+    document.getElementById(ButtonReplyHashHeader+props.hash).style.backgroundColor = "rgb(0, 136, 255)"
     repOn.value = false;
     await loadMostRecent();
     reps.value = true;
+
 }
 
 async function sumbitReply(){
+    console.log("d")
+    document.getElementById(ButtonReplyHashHeader+props.hash).style.backgroundColor = "black"
     let reply = document.getElementById(TextHashHeader+props.hash).value
     let strs = route.path.split('/');
     let author = await hashToUser(strs[3])
@@ -170,9 +174,9 @@ let ButtonReplyHashHeader = "BR@"
                 <div class="replyShow" :id=hash @click="showReps(this)" >
                     +++SHOW REPLIES+++
                 </div>
-                <div v-if="reps || level<4"> 
+                <div v-if="reps"> 
                     <div v-for="data in replies">
-                        <Reps :level=level+1 :text=data[0] :auth=data[1] :date=data[2] :hash=data[3] />
+                        <Reps :text=data[0] :auth=data[1] :date=data[2] :hash=data[3] />
                     </div>
 
                     <div class="textButton" @click="loadMore()"> 

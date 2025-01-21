@@ -101,7 +101,7 @@ const split = "/"
 
 .titleBlock{
     margin:auto;
-    width:1200px;
+    max-width:1200px;
     padding-top: 60px;
     padding-left: 25px;
     padding-right: 25px;
@@ -118,8 +118,11 @@ const split = "/"
     font-weight: bold;
 }
 
+
 @media (max-width: 767px) {
-    
+    .titleBlock{
+        
+    }
 }
 
 @media (max-width: 1023px) and (min-width: 768px) {
