@@ -3,7 +3,7 @@
 <h2>Preview</h2>
 
 
-<div>clocker is a standard formun based on entirely on recency, hence its name.</div>
+<div>clocker is a standard formun based on entirely on recency</div>
 <br>
 
 ![image|1](https://github.com/user-attachments/assets/c8a4dede-7264-4b3c-bdcb-4d44a1f40268)
