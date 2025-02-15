@@ -20,13 +20,14 @@ onBeforeMount(async() => {
 async function loadPosts(){
     
     var str = "titleChunk~.&~"+route.params.page;
-    
+        arr.value.push(["Server is warming up, please be patient...","","","",""]);
         const response =  await fetch(backendAPI, {
             method: "POST",
             body: str
         });
         
         const data = await response.json();
+        arr.value.pop();
         for(let i = 0; i<data.length; i++){
             let subData = [data[i]["title"],
                            data[i]["author"],
@@ -108,25 +109,34 @@ const split = "/"
 
 }
 
-.forward{
-    margin-left: 100px;
-    font-size: 15px;
-    font-weight: bold;
-}
-.back{
-    font-size: 15px;
-    font-weight: bold;
-}
 
 
 @media (max-width: 767px) {
-    .titleBlock{
-        
+    .forward{
+        position:absolute;
+        right: 0;
+        margin-right: 30px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .back{
+        margin-right: 10px;
+
+        font-size: 15px;
+        font-weight: bold;
     }
 }
 
-@media (max-width: 1023px) and (min-width: 768px) {
-   
+@media  (min-width: 768px) {
+    .forward{
+        margin-left: 100px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .back{
+        font-size: 15px;
+        font-weight: bold;
+    }
 }
 
 
